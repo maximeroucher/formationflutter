@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:formationflutter/top_bar.dart';
 
 class TutoPage extends StatelessWidget {
   const TutoPage({Key? key}) : super(key: key);
@@ -6,10 +7,7 @@ class TutoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Container(
-        color: Colors.amber,
-        height: 60,
-      ),
+      const TopBar(),
       Container(
         color: Colors.green,
         height: 80,
