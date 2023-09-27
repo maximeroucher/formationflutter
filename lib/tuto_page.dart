@@ -22,10 +22,11 @@ class TutoPage extends StatelessWidget {
         color: Colors.purple,
         height: 50,
       ),
-      Container(
-        color: Colors.red,
-        height: 550,
-      ),
+      Expanded(
+        child: Container(
+          color: Colors.red,
+        ),
+      )
     ]);
   }
 }
