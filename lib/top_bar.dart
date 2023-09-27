@@ -6,8 +6,10 @@ class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.amber,
       height: 60,
+      child: Row(
+        children: [],
+      )
     );
   }
 }
