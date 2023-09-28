@@ -8,6 +8,7 @@ class TopBar extends StatelessWidget {
     return Container(
         height: 60,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [Icon(Icons.arrow_back), Icon(Icons.search)],
         ));
   }
