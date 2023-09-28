@@ -6,10 +6,9 @@ class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
-      child: Row(
-        children: [],
-      )
-    );
+        height: 60,
+        child: Row(
+          children: [Icon(Icons.arrow_back), Icon(Icons.search)],
+        ));
   }
 }
