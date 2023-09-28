@@ -5,7 +5,7 @@ class TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return const SizedBox(
         height: 60,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
