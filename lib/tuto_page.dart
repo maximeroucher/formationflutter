@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:formationflutter/title_bar.dart';
 import 'package:formationflutter/top_bar.dart';
 
 class TutoPage extends StatelessWidget {
@@ -8,10 +9,7 @@ class TutoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: [
       const TopBar(),
-      Container(
-        color: Colors.green,
-        height: 80,
-      ),
+      const TitleBar(),
       Container(
         color: Colors.blue,
         height: 150,
