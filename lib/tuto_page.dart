@@ -3,6 +3,8 @@ import 'package:formationflutter/task_bar.dart';
 import 'package:formationflutter/title_bar.dart';
 import 'package:formationflutter/top_bar.dart';
 
+import 'calendar.dart';
+
 class TutoPage extends StatelessWidget {
   const TutoPage({Key? key}) : super(key: key);
 
@@ -11,10 +13,7 @@ class TutoPage extends StatelessWidget {
     return Column(children: [
       const TopBar(),
       const TitleBar(),
-      Container(
-        color: Colors.blue,
-        height: 150,
-      ),
+      const Calendar(),
       const TaskBar(),
       Expanded(
         child: Container(
