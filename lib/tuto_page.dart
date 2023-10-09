@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:formationflutter/task_bar.dart';
 import 'package:formationflutter/title_bar.dart';
 import 'package:formationflutter/top_bar.dart';
 
@@ -14,10 +15,7 @@ class TutoPage extends StatelessWidget {
         color: Colors.blue,
         height: 150,
       ),
-      Container(
-        color: Colors.purple,
-        height: 50,
-      ),
+      const TaskBar(),
       Expanded(
         child: Container(
           color: Colors.red,
