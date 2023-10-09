@@ -3,6 +3,16 @@ import 'package:flutter/material.dart';
 class Calendar extends StatelessWidget {
   const Calendar({super.key});
 
+  static const List<Map<String, int>> daysAndNumber = [
+    {"Mon": 20},
+    {"Tue": 21},
+    {"Wed": 22},
+    {"Thu": 23},
+    {"Fri": 24},
+    {"Sat": 25},
+    {"Sun": 26},
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Padding(
