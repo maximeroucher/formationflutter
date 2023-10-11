@@ -7,22 +7,28 @@ class Day extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 40,
+    return Container(
+      decoration: BoxDecoration(
+          color: isToday ? Colors.white : Colors.transparent,
+          borderRadius: BorderRadius.circular(25)),
+      width: 45,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             dayAndNumber.keys.first,
-            style: const TextStyle(color: Colors.white),
+            style:
+                TextStyle(color: isToday ? Colors.grey.shade600 : Colors.white),
           ),
           const SizedBox(
             height: 15,
           ),
           Text(
             dayAndNumber.values.first.toString(),
-            style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),
+            style: TextStyle(
+                color: isToday ? Colors.black : Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 25),
           )
         ],
       ),
