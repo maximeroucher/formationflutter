@@ -11,13 +11,18 @@ class TaskList extends StatelessWidget {
       Task(title: "Design Meeting", date: "10:00 AM", icons: Icons.file_copy),
       Task(title: "Lunch Break", date: "12:00 PM", icons: Icons.phone),
       Task(title: "Client Meeting", date: "02:00 PM", icons: Icons.people),
+      Task(title: "Product Launch", date: "05:00 PM", icons: Icons.file_copy),
+      Task(title: "Team Meeting", date: "06:00 PM", icons: Icons.people),
     ];
 
     return Expanded(
-      child: Column(
-        children: tasks
-            .map((e) => TaskUi(task: e, selected: tasks.indexOf(e) == 0))
-            .toList(),
+      child: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
+        child: Column(
+          children: tasks
+              .map((e) => TaskUi(task: e, selected: tasks.indexOf(e) == 0))
+              .toList(),
+        ),
       ),
     );
   }
