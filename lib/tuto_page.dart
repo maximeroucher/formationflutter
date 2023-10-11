@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formationflutter/task_bar.dart';
+import 'package:formationflutter/task_list.dart';
 import 'package:formationflutter/title_bar.dart';
 import 'package:formationflutter/top_bar.dart';
 
@@ -10,16 +11,12 @@ class TutoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      const TopBar(),
-      const TitleBar(),
-      const Calendar(),
-      const TaskBar(),
-      Expanded(
-        child: Container(
-          color: Colors.red,
-        ),
-      )
+    return const Column(children: [
+      TopBar(),
+      TitleBar(),
+      Calendar(),
+      TaskBar(),
+      TaskList()
     ]);
   }
 }

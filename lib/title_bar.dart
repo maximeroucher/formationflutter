@@ -18,10 +18,10 @@ class TitleBar extends StatelessWidget {
             Container(
                 padding: const EdgeInsets.all(15),
                 decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 252, 230, 250),
+                    color: const Color(0xfffeeff6),
                     borderRadius: BorderRadius.circular(20)),
                 child: const Icon(Icons.calendar_month,
-                    color: Color.fromARGB(255, 255, 113, 196), size: 30))
+                    color: Color(0xffca5b8f), size: 30))
           ]),
         ));
   }
