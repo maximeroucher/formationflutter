@@ -1,16 +1,7 @@
 # formationflutter
 
-A new Flutter project.
+This is a tutorial to introduce new member of Eclair to Flutter, in order for them to be able to contribute to Titan.
 
-## Getting Started
+This aims to recreate this visual from Dribbble :
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot from 2023-10-11 20-25-47](https://github.com/maximeroucher/formationflutter/assets/34400034/f01fcc66-f63e-4940-b0dc-26f1cc6d0b91)
