@@ -14,6 +14,8 @@ class Calendar extends StatelessWidget {
     {"Sun": 26},
   ];
 
+  static const today = 21;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,7 +28,10 @@ class Calendar extends StatelessWidget {
         height: 130,
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: daysAndNumber.map((e) => Day(dayAndNumber: e)).toList()),
+            children: daysAndNumber
+                .map((e) =>
+                    Day(dayAndNumber: e, isToday: e.values.first == today))
+                .toList()),
       ),
     );
   }

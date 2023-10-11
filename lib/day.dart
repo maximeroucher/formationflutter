@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Day extends StatelessWidget {
   final Map<String, int> dayAndNumber;
-  const Day({super.key, required this.dayAndNumber});
+  final bool isToday;
+  const Day({super.key, required this.dayAndNumber, required this.isToday});
 
   @override
   Widget build(BuildContext context) {
